@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width' initial-scale=1.0">
+  <title>BusinessPulse</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src"script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>BusinessPulse</h1>
+    <p>Monitor the life of your business.</p>
+    <nav>
+      <ul>
+        <li><a href="#register">Sign Up</a></li>
+        <li><a href="login">Login</a></li>
+        <li><a href="dashboard">Dashboard</a></li>
+        <li><a href="employee-management">Employee Management</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="register">
+      <h2>Sign Up</h2>
+      <form id="registration-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="credentials">Employee Credentials:</label>
+        <input type="credentials" id="credentials" name="credentials" required>
+
+          <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Welcome to your dashboard!!</p>
+    </section>
+
+    <section id="employee-management">
+      <h2>Employee Management</h2>
+      <button onclick="loadEmployeeData()">Load Employee Data</button>
+      <div id="employee-list"></div>
+    </section>
+  </main>
+
+    <footer>
+      <p>&copy; 2024 BusinessPulse. All rights reserved</p>
+    </footer>
+  
+</body>
+</html>
